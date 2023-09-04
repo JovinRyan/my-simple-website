@@ -1,0 +1,302 @@
+<html>
+  <header>
+
+    
+    
+    <style>
+
+      #background-image-start {
+        z-index: -1;
+        max-width: 100%;
+        position: absolute;
+        top:0px;
+        left: 0px
+      }
+
+      .box-darkcyan {
+        background-color: darkcyan;
+        position: absolute;
+        left:0px;
+        width:2000px;
+        max-width:100%;
+
+        z-index: 0;
+      }
+
+      .box-lightcyan {
+        background-color: lightcyan;
+        position: absolute;
+        left:0px;
+        /* width: 55vh; */
+        width:30%;
+        height: 300px;
+        border-radius: 10px;
+        transition: opacity 2s ease-in;
+
+        z-index: 0;
+
+        transition: all 0.35s;
+
+        animation: fadeInAnimation ease 2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes fadeInAnimation {
+        0% {
+        opacity: 0;
+          }
+        100% {
+        opacity: 1;
+          }
+      }
+
+      .box-lightcyan:hover {
+        box-shadow: 9px 9px 15px rgb(91, 78, 177);
+        transform: scale(1.1);
+      }
+
+      #header-box {
+        position: absolute;
+        top:0px;
+        height:50px;
+
+        background-image: linear-gradient(lightseagreen, lightseagreen)
+      }
+
+      .header-font {
+        font-family: sans-serif;
+        color: lightcyan;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 41px;
+        font-weight: bold;
+      }
+
+      #content-box {
+        bottom: -3000px;
+        height: 3000px;
+      }
+
+      .button-header {
+        background-color: lightcyan;
+        color: darkcyan;
+        font-size: large;
+        font-weight: bold;
+        border: none;
+        height: 50px;
+        width: 125px;
+        border-radius: 5px;
+        transition: all 0.35s;
+        cursor: pointer;
+        z-index: 2;
+        border: 2px solid lightseagreen;
+      }
+
+      .button-header:hover {
+        background-color: slateblue;
+        border-color: slateblue;
+        color: lightcyan;
+      }
+
+      .button-header:active{
+        opacity: 0.5;
+      }
+
+      .intro {
+        position: relative;
+        font-family: Cambria;
+        text-align: center;
+        color:lightcyan;
+        /* text-shadow: -1px -1px 0 rgba(255, 255, 255, 1); */
+        margin-top: 0px;
+        margin-bottom: 0px;
+        top: 60px;
+        font-size: 40px;
+      }
+
+      .interests-words {
+        font-size: 24px;
+        color: slateblue;
+        font-weight: bold;
+        margin-top: 0px;
+        font-family: cambria;
+      }
+
+      .divider-box{
+        background-color: lightseagreen;
+        max-width: 100%;
+        z-index: 1;
+        left: 0px;
+      }
+
+      .about-me-text {
+        font-size: 28px;
+        color: lightcyan;
+        margin-top: 0%;
+        margin-left: 4%;
+        margin-right: 4%;
+        font-family: Arial, Helvetica, sans-serif;
+        /* text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000; */
+  
+      }
+    </style>
+
+  </header>
+
+  <body>
+        <img src="./Files/pexels-suzy-hazelwood-1629236.jpg" id="background-image-start" style="position: fixed;">
+        <div class="box-darkcyan" id="header-box" style="position: fixed; z-index: 2; background-color: lightseagreen;"></div>
+        <button class="button-header" style="position: fixed; right:0px; top:0px" onClick="document.getElementById('contact-subheading').scrollIntoView();"> Contact </button>
+        <button class="button-header" style="position: fixed; right:125px; top:0px" onClick="document.getElementById('education-subheading').scrollIntoView();"> Education </button>
+        <button class="button-header" style="position: fixed; right:250px; top:0px" onClick="document.getElementById('projects-subheading').scrollIntoView();"> Projects </button>
+        <button class="button-header" style="position: fixed; right:375px; top:0px" onClick="document.getElementById('about-me-subheading').scrollIntoView();"> About Me </button>
+        <button type="submit" class="button-header" style="position: fixed; right:500px; top:0px" onclick="window.open('./Files/JovinRyanJoseph_Resume_August2023.pdf')">My Resume</button>
+
+        <h1 class="header-font" style="position: fixed; top:0px;left: 5px; z-index: 2;">Jovin Ryan Joseph</h1>
+
+        <div class="box-lightcyan" style="top:40%; margin-left: 3%;">
+
+        <img src="./Files/LammpsL.png" style="position: absolute; top:8%; left: 4%; width:25%">
+        <img src="./Files/1200px-Quantum_ESPRESSO_logo.jpg" style="position: absolute; top: 8%; left: 29%; width:52%">
+        <img src="./Files/ZrC_Cif.png" style="position: absolute; top: 50.2%; left: 4%; width: 25%;">
+
+        <p style="position: absolute; top:54%; left: 32%; width: 66%;" class="interests-words">
+          Atomistic Molecular Dynamics (MD) Simulations & First Principle Density Functional Theory (DFT) Modelling.
+        </p>
+
+        </div>
+
+        <div class="box-lightcyan" style="top:40%; left: 35%">
+
+          <img src="./Files/Moore's_Law_Transistor_Count_1970-2020.png" style="position: absolute; top: 4%; left: 53%; width: 43%">
+          <img src="./Files/ShutterStockChip.png" style="position: absolute; top: 57.7%; right: 4%; width: 40%;">
+        
+          <p class="interests-words" style="position: absolute; top:8%; left: 4%; width:45.5%;">
+            The Semiconductor and Microelectronics Industry. Keeping Up With Recent Improvements Like Extreme Ultraviolet Lithography.
+          </p>
+
+        </div>
+        
+        <div class="box-lightcyan" style="top:40%; left:67%">
+        <img src="./Files/PythonPNG.png" style="position: absolute; top:8%; left: 4%; width: 25%;">
+        <img src="./Files/mp_color.png" style="position: absolute; left: 4%; top:52%; width: 33%;">
+        <img src="./Files/pytorch_logo_icon_169823.png" style="position: absolute; left:37%; width:57%; top: 50%;">
+
+        <p class="interests-words" style="position: absolute; top:8%; left: 33%; width:60%;">
+          Machine Learning in Python for Applications in Materials Informatics. </br>
+          Specifically for Predicting Material Properties.
+        </p>
+
+        </div>
+
+        <h1 class="intro">Howdy! I am</h1>
+        <h1 class="intro" style="font-size: 65px;">Jovin</h1>
+
+        <h1 class="intro" style="padding-top: 40px; font-size: 55px; animation: fadeInAnimation ease 1s; animation-iteration-count: 1; animation-fill-mode: forwards;">My Academic Interests:</h1>
+     
+
+        <div class="box-darkcyan" id="content-box">
+        <div class="divider-box" style="position: absolute; top:0%; height: 50px; width: 100%;">
+          <p class="header-font" style="text-align: center; left: 50%;" id="about-me-subheading">About Me!</p>
+        </div>
+        <img src="./Files/26_Joseph_Jovin_Ryan_23128.JPG" style="position: absolute; top: 3%; left: 2%; width: 25%; border-radius: 5%;">
+        <div class="divider-box" style="position: absolute; top: 3%; left: 32%; height: 21.2%; width: 54%; border-radius: 5%; ">
+        <p class="about-me-text" style="position: absolute; top: 3.5%">
+          I'm Jovin Ryan Joseph, a sophomore studying Chemical Engineering at Texas A&M University - College Station. </br>
+          I am also a member of the Texas A&M Corps of Cadets in Sq-11. As such, I get to spend a lot of time actively engaged in a student led "leadership laboratory" and learn from 
+          great leaders from the U.S. millitary. 
+          
+        </br></br>
+          I also actively engage in a variety of learning opportunities on campus. Above everything, I am driven by a love for learning and find myself doing things not normally expected from a chemical engineer.<br>
+          I often find myself juggling multiple side projects, trying to learn a dozen new skills.  
+        </br></br>  
+          As for the future, I plan on attending graduate school after graduating and working in R&D, furthering cutting edge technology. 
+
+        </p>
+        </div>>
+        <img src="./Files/TeyandI.JPG" style="position: absolute; top: 26%; left: 56%; width: 41%; border-radius: 4%;">
+        <div class="divider-box" style="position: absolute; top: 26%; left: 2%; height: 15.35%; width: 50%; border-radius: 4%; ">
+        <p class="about-me-text" style="position: absolute; top: 5.7%">
+          I believe joining the Corps of Cadets has been one of the best decisions I ever made. I can confidently say that this experience allowed me to develop more than anythin else in my life.
+          The people I met, the friends I made, everyone has made the past year deeply memorable. My beloved mentor (pictured alongside me) as well as the rest of my upperclassmen
+          helped me push through my limits and come out a more well-rounded person and a better leader. </br> </br>
+          I can't wait to see what else the Corps has in store for me. I am also greatly looking forward to taking on more responsibilities as a leader and developing even further. 
+        </p>
+        </div>>
+
+        <div class="divider-box" style="position: absolute; top:43%; height: 50px; width: 100%;">
+          <p class="header-font" style="text-align: center; left: 50%;" id="projects-subheading">My Projects</p>
+        </div>
+        <a href="./Files/JovinRyanJoseph_Poster_Final.pdf" download="JovinRyanJoseph_Poster_Final.pdf" target="_blank"><img src="./Files/JovinRyanJoseph_Poster_Final_page-0001.jpg" style="position: absolute; top: 45.7%; width: 44%; border-radius: 3%; left: 3%"></a>
+
+        <div class="divider-box" style="position: absolute; top: 45.7%; left: 49%; width: 44%; height: 12.6%; border-radius: 3%;" >
+          <ul>
+            <li class="about-me-text">Performed independent research, modelling the fabrication of nanoporous graphene membranes.</li> <br>
+            <li class="about-me-text">Recieved a $6,000 grant for performing research.</li> </br>
+            <li class="about-me-text">Produced assets and workflows to create atomistic simulations.</li> </br>
+            <li class="about-me-text">Collected, analyzed and visualized data using Python and OriginLab.</li> <br>
+            <li class="about-me-text">Currently in process of publishing the research.</li>
+          </ul>
+
+        </div>
+        <img src="./Files/NUEN-news-atom-new-22Feb2019.jpg" style="position: absolute; top: 59%; left: 49%; height: 5.3%; border-radius: 5%;">
+        <img src="./Files/Picture2USRG.jpg" style="position: absolute; top: 59%; left: 60%; height: 5.3%; border-radius: 5%;">
+        <img src="./Files/NSUFLogo_White.png" style="position: absolute; top: 59%; left: 80.5%; height: 5.3%;">
+
+        <iframe style="position: absolute; top: 66%; left: 55%; width: 43%; height: 14%; border-radius: 3%;" src="https://www.youtube.com/embed/7V2ll5CYD7o" title="AeroCheck (TAMUHack 2023)" frameborder="0" allow="accelerometer;
+         autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="divider-box" style="position: absolute; top: 66%; left: 3%; width: 50%; height: 9%; border-radius: 5%;">
+          <ul>
+            <li class="about-me-text">Formulated the ideal configuration of sensors based on widely accepted air quality standards.</li> <br>
+            <li class="about-me-text">Devised a method to demonstrate functionality and accentuate usefulness of AeroCheck.</li> <br>
+            <li class="about-me-text">Compiled documentation and produced a final report of the overall project and development progress for team use.</li> <br>
+          </ul>
+        </div>
+        <img src="./Files/wiredSensors.jpg" style="position: absolute; top: 75.5%; left: 42%; height: 4.5%; border-radius: 3%;">
+        <img src="./Files/graphimg (1).png" style="position: absolute; top: 75.5%; left: 25%; height: 4.5%; border-radius: 3%;">
+        <img src="./Files/downloadTamuHack.png" style="position: absolute; top: 75.5%; left: 3%; height: 4.5%; border-radius: 3%;">
+
+        <div class="divider-box" style="position: absolute; top: 81%; left: 0%; width: 100%; height: 50px;">
+          <p class="header-font" style="text-align: center; left: 50%;" id="education-subheading">Education</p>
+        </div>
+
+        <img src="./Files/ArtieMcFerrin.png" style="position: absolute; width: 27%; top: 84%; border-radius: 4%;">
+        <img src="./Files/ARPImg.png" style="position: absolute ;height: 5.8%; top: 93.5%; left: 34%; border-radius: 5%;">
+        <img src="./Files/LAUNCH-Logo-H.png" style="position: absolute ;height: 5.8%; top: 93.5%; left: 58%; border-radius: 5%;">
+        <div class="divider-box" style="position: absolute; top: 84%; left: 30%; width: 65%; height: 9%; border-radius: 5%;">
+          <p class="about-me-text" style="padding-top: 2%;">
+            Bachelor's of Science - B.Sc Chemical Engineering <br>
+            GPA: 4.0 <br>
+            Expected Graduation: May 2026 <br><br>
+            University Honors <br>
+            Kappa Phi Gathright Dean's Excellence Award Semi-Finalist <br>
+            Aggie Research Scholar
+          </p>
+        </div>
+
+        <div style="position: absolute; top: 100%; height: 10%; width: 100%;">
+
+          <div class="box-darkcyan" style="position: absolute; top: 50px; width: 100%; height: 100%;" id="contact-subheading">
+            <h2 class="intro" style="font-size: 50px; text-align: left; padding: none; position: absolute; top:2%; left: 1%;">
+              Contact
+            </h2>
+            <p class="intro" style="font-size: 30px; text-align: left; padding: none; position: absolute; top:23%; left: 4%;">
+              Phone: (979) 326-4849 <br> <br>
+              Email: jovinryanj@tamu.edu <br> <br>
+              LinkedIn: https://www.linkedin.com/in/jovinryanjoseph/
+
+            </p>
+
+          </div>
+
+        </div>
+
+        </div>
+
+  </body>
+</html>
